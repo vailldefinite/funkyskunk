@@ -20,6 +20,10 @@ p {
   text-align: center;
 }
 
+.button1 {
+  font-size: 24px;
+}
+
 .footer {
   color: white;
   text-align: bottom;
