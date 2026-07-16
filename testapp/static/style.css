@@ -11,17 +11,39 @@ p {
 }
 
 .navbar-toggler {
-  margin-right: 20px !important;
+  margin-right: 10px !important;
+  padding: 0.25rem 0.5rem;
+}
 
+.navbar {
+  color: black;
+  padding: 0.2rem 0.5rem;
+  min-height: auto;
+}
+
+.navbar-brand {
+  padding: 0.2rem 0;
+}
+
+.navbar-brand img {
+  width: 48px;
+  height: auto;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.35rem 0.55rem;
+  font-size: 0.95rem;
 }
 
 img {
-  display: block;
   max-width: 80%;
   height: 30%;
   margin: 20px auto;
 }
-
 
 .container-fluid {
   margin: 0 !important;
@@ -35,11 +57,6 @@ img {
   justify-content: center;
   background-color: black;
   text-align: center;
-}
-
-.navbar {
-  color: black;
-
 }
 
 .button1 {
