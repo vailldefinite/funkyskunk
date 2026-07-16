@@ -2,16 +2,16 @@
 <html>
      {% block head %}
     <head>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <title>{% block title %}Funky Skunk{% endblock %}</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     {% endblock %}
     <body> 
         <header>
-            <div id="bottomheader">
-                <div class="container-fluid">
+            <div id="bottomheader" class="container-fluid">
+                <div>
                     <nav class="navbar navbar-light navbar-expand-lg" style="background-color: white;">
                         <a class="navbar-brand" href="{{ url_for('home') }}">
                             <img src="/static/images/skunk.png" width="80px" alt="">

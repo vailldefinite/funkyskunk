@@ -3,10 +3,10 @@
 
 {% block content %}
 <body class="body1">
-    <br><br>
-    <h1>Clouds On A Windy Day</h1><br>
+    <br>
+    <h1>Clouds On A Windy Day</h1>
 
-    <img src="{{ url_for('static', filename='images/cover.jpg') }}" width="400" height="400" alt="Cover Art"><br><br>
+    <img class="coverimage" src="{{ url_for('static', filename='images/cover.jpg') }}" width="400" height="400" alt="Cover Art">
     
     <audio controls>
         <source src="/static/songs/CLOUDS WINDY 6.6.22.mp3" type="audio/mpeg">
