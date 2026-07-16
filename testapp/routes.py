@@ -1,10 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for
 from testapp import mainapp
 
+
+
 @mainapp.route('/', methods=['GET', 'POST'])
+
 @mainapp.route('/home', methods=['GET', 'POST'])
 def home():
     return render_template('home.html', title='Home')
+
 
 @mainapp.route('/themaster', methods=['GET', 'POST'])
 def themaster():

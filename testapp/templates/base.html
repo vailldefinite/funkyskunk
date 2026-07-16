@@ -4,30 +4,69 @@
     <head>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <title>{% block title %}Funky Skunk{% endblock %}</title>
-        <link rel="icon" href="{{ url_for('static', filename='images/skunk.png') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     {% endblock %}
     <body> 
-        <div class="sidebar">
-        <a href="{{ url_for('home') }}">Home</a>
-
-        <h2>One Sweet World (2020)</h2>
-
-        <a href="{{ url_for('rlt') }}">Road Less Traveled</a>
-        <a href="{{ url_for('themaster') }}">The Master</a>
-        <a href="{{ url_for('pursuit') }}">Pursuit For Practicality</a>
-        <a href="{{ url_for('plasticshorts') }}">Plastic Shorts</a>
-        <a href="{{ url_for('tuxedo') }}">Tuxedo</a>
-        <a href="{{ url_for('senses') }}">In The Senses</a>
-        <a href="{{ url_for('meta') }}">Metamorphosis</a>
-        <a href="{{ url_for('spacebar') }}">Welcome To The Spacebar</a>
-        <a href="{{ url_for('crimson') }}">Crimson Eyes</a>
-        <a href="{{ url_for('hslm') }}">Hot Stick Line Mechanic</a>
-        <a href="{{ url_for('clouds') }}">Clouds On A Windy Day</a>
-        <a href="{{ url_for('spiritual') }}">Spiritual Practices</a>
-        </div>
-   
-            <div>
+        <header>
+            <div id="bottomheader">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-light navbar-expand-lg" style="background-color: white;">
+                        <a class="navbar-brand" href="{{ url_for('home') }}">
+                            <img src="/static/images/skunk.png" width="80px" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarToggler">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('home') }}">home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('rlt') }}">Road Less Traveled</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('themaster') }}">The Master</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('pursuit') }}">Pursuit For Practicality</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('plasticshorts') }}">Plastic Shorts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('tuxedo') }}">Tuxedo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('senses') }}">In The Senses</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('meta') }}">Metamorphosis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('spacebar') }}">Welcome To The Spacebar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('crimson') }}">Crimson Eyes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('hslm') }}">Hot Stick Line Mechanic</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('clouds') }}">Clouds On A Windy Day</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('spiritual') }}">Spiritual Practices</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </nav>
+                </div>
+            </div>    
+        </header>
+            <div class="body1">
             {% block content %}
             {% endblock %}
             </div>
@@ -36,5 +75,6 @@
             &copy; One Big L.L.C. 2026
             {% endblock %}
             </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
