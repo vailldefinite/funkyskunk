@@ -61,3 +61,7 @@ def spiritual():
 @mainapp.route('/funktional', methods=['GET', 'POST'])
 def funktional():
     return render_template('funktional.html', title='Funktional')
+
+@mainapp.route('/highlife', methods=['GET', 'POST'])
+def highlife():
+    return render_template('highlife.html', title='High Life')
