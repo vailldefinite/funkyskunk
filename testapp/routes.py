@@ -57,3 +57,7 @@ def clouds():
 @mainapp.route('/spiritual', methods=['GET', 'POST'])
 def spiritual():
     return render_template('spiritual.html', title='Spiritual Practices')
+
+@mainapp.route('/funktional', methods=['GET', 'POST'])
+def funktional():
+    return render_template('funktional.html', title='Funktional')
