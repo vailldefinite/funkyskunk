@@ -65,3 +65,7 @@ def funktional():
 @mainapp.route('/highlife', methods=['GET', 'POST'])
 def highlife():
     return render_template('highlife.html', title='High Life')
+
+@mainapp.route('/isitreal', methods=['GET', 'POST'])
+def isitreal():
+    return render_template('isitreal.html', title='Is It Real')
