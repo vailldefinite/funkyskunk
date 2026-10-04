@@ -1,5 +1,11 @@
 
+.btn {
+  margin: 10px;
 
+}
+.btn2 {
+  align-content: center;
+}
 h2 {
   color: white;
   font-size: 28px;
@@ -61,6 +67,13 @@ img {
 
 .button1 {
   font-size: 24px;
+}
+
+.button2 {
+  font-size: 18px;
+  align-items: left;
+  margin-top: 20px;
+  margin-right: 700px;
 }
 
 .footer {
