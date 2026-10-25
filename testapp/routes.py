@@ -73,3 +73,39 @@ def isitreal():
 @mainapp.route('/cdf', methods=['GET', 'POST'])
 def cdf():
     return render_template('cdf.html', title='Chicks Dig Flowers')
+
+@mainapp.route('/runnin', methods=['GET', 'POST'])
+def runnin():
+    return render_template('runnin.html', title='Runnin')
+
+@mainapp.route('/trillium', methods=['GET', 'POST'])
+def trillium():
+    return render_template('trillium.html', title='Trillium')
+
+@mainapp.route('/jenny', methods=['GET', 'POST'])
+def jenny():
+    return render_template('jenny.html', title='Jenny On The Groove')
+
+@mainapp.route('/friction', methods=['GET', 'POST'])
+def friction():
+    return render_template('friction.html', title='Friction')
+
+@mainapp.route('/silver', methods=['GET', 'POST'])
+def silver():
+    return render_template('silver.html', title='Silver Tongue')
+
+@mainapp.route('/boots', methods=['GET', 'POST'])
+def boots():
+    return render_template('boots.html', title='Alligator Boots')
+
+@mainapp.route('/evening', methods=['GET', 'POST'])
+def evening():
+    return render_template('evening.html', title='In The Evening')
+
+@mainapp.route('/spaces', methods=['GET', 'POST'])
+def spaces():
+    return render_template('spaces.html', title='Spaces')
+
+@mainapp.route('/milf', methods=['GET', 'POST'])
+def milf():
+    return render_template('milf.html', title='M.an I. L.ove F.unk')
