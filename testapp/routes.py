@@ -69,3 +69,7 @@ def highlife():
 @mainapp.route('/isitreal', methods=['GET', 'POST'])
 def isitreal():
     return render_template('isitreal.html', title='Is It Real')
+
+@mainapp.route('/cdf', methods=['GET', 'POST'])
+def cdf():
+    return render_template('cdf.html', title='Chicks Dig Flowers')
